@@ -4,7 +4,7 @@ using namespace std;
 // Function to return Breadth First Traversal of given graph.
 vector<int> bfsOfGraph(int n, vector<int> adj[])
 {
-    int vis[n] = {0};
+    int* vis = new int[n]{0};
     vis[0] = 1;
     queue<int> q;
     // push the initial starting node
